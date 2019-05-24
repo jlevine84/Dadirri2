@@ -2,8 +2,9 @@ import React from 'react';
 import './LandingPage.css'
 import LoginForm from '../Auth/LoginForm';
 import SignupForm from '../Auth/SignupForm';
-import { Redirect, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import iconPath from '../../images/icon.png'
+
 class LandingPage extends React.Component{
 
   dismissModal = ()=>{
@@ -17,7 +18,10 @@ class LandingPage extends React.Component{
   render(){
     return(
       <div className="body">
-        <h4><Link to="/about" className="link">About Dadirri</Link></h4>
+        <nav className="about-nav">
+          <Link to="/about" className="link">About Dadirri</Link>
+        </nav>
+
         <div class="container">
           <br/>
           <br/>

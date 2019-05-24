@@ -1,6 +1,7 @@
 import React from 'react'
 import './about.css'
 import { Link } from 'react-router-dom';
+
 function About() {
   return (
     <div className="about-body">
@@ -10,7 +11,7 @@ function About() {
       </nav>
 
       <div className="about-title-row">
-        <h1><strong>About Dadirri</strong></h1>
+        <div className="about-title">About Dadirri</div>
         <img src='./../../images/icon.png' className='icon mx-auto d-block'/>
       </div>
 

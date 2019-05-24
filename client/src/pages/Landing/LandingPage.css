@@ -1,11 +1,10 @@
 .body{
-    background-image: radial-gradient( #FAE3D9,rgb(127, 236, 222),#61C0BF);
-    min-height: 150vh;
+    background-image: radial-gradient( rgb(106, 169, 241),rgb(154, 214, 236),rgb(154, 214, 236));
+    min-height: 100vh;
     width:100vw;
     background-size: cover;
     height: auto;
 }
-
 
 @-webkit-keyframes glow {
     to {
@@ -17,9 +16,11 @@
             
     }
 }
+
 .align-right{
     text-align:right
 }
+
 .img-glow {
     height:200px;
     border: 1px solid transparent;
@@ -29,37 +30,49 @@
        -moz-transition: border 2.0s linear, box-shadow 5.0s linear;
             transition: border 2.0s linear, box-shadow 5.0s linear;
 }
- .titlex{
-    font-family: 'Poiret One', cursive;
-    font-size: 100px;
-    color: #767D7D;
+
+.titlex{
+font-family: 'Poiret One', cursive;
+font-size: 100px;
+color: #767D7D;
+text-align:center;
+}
+
+.signUp{
+font-family: 'Poiret One', cursive;
+color: #767D7D;
+text-align:center;
+margin:40px;
+border: solid 1px rgb(185, 185, 185);
+box-shadow: 2px 2px 2px black;
+}
+
+.buttonDiv{
     text-align:center;
- }
- .signUp{
-    font-family: 'Poiret One', cursive;
+}
+
+.welcomwModal{
+    height:200px;
+    width:200px;
+}
+
+h4{ 
+    margin-right: 50px;
     color: #767D7D;
-    text-align:center;
-    margin:40px;
-    border: solid 1px rgb(185, 185, 185);
-    box-shadow: 2px 2px 2px black;
- }
- .buttonDiv{
-     text-align:center;
- }
- .welcomwModal{
-     height:200px;
-     width:200px;
- }
- h4{ 
-     margin-right: 50px;
-     color: #767D7D;
-     text-align:right;
-     padding: 20px;
- }
- .link{
-     color: #767D7D
- }
- .link:hover{
-     color: rgb(112, 106, 104)
- }
+    text-align:right;
+    padding: 20px;
+}
+
+.link{
+    color: #767D7D
+}
+
+.link:hover{
+color: rgb(112, 106, 104)
+}
+
+.about-nav {
+background-color: rgb(154, 214, 236);
+height: 8vh;
+}
  
