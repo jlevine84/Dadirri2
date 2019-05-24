@@ -19,10 +19,15 @@ class LandingPage extends React.Component{
     return(
       <div className="body">
         <nav className="about-nav">
-          <Link to="/about" className="link">About Dadirri</Link>
+          <div className="about-link">
+            <Link to="/about" className="link"><h4>About Dadirri</h4></Link>
+          </div>
         </nav>
 
         <div class="container">
+          <br/>
+          <br/>
+          <br/>
           <br/>
           <br/>
           <br/>

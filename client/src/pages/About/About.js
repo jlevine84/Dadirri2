@@ -12,7 +12,7 @@ function About() {
 
       <div className="about-title-row">
         <div className="about-title">About Dadirri</div>
-        <img src='./../../images/icon.png' className='icon mx-auto d-block'/>
+        <img src='./../../images/icon.png' alt="Nautilus" className='icon mx-auto d-block'/>
       </div>
 
       <div className="about-info-row">
@@ -20,19 +20,15 @@ function About() {
           <p>
             <strong>Dadirri</strong>, by definition, is an Aboriginal term meaning, <strong>“A state of stillness, inner reflection, and deep listening.”</strong> 
           </p>
-          <br/>
           <p>
-            Dadirri's goal is to help our users by providing them a secure platform in which you can track your mental health in an easy to use and helpful manner. To achieve those goals, Dadirri allows users to log helpful information so you can keep track of your goals, progress, and mental wellness.
+          <strong>Dadirri's</strong> goal is to help our users by providing them a secure platform in which you can track your mental health in an easy to use and helpful manner. To achieve those goals, Dadirri allows users to log helpful information so you can keep track of your goals, progress, and mental wellness.
           </p>
-          <br/>
-          <br/>
           <p>
-            Dadirri uses your daily entries to help chart and show trends through a myriad of date functionalities. If you ever forget to enter or want to update your daily entries; Don't worry! You can always select a date then enter or update a day's information!
+          <strong>Dadirri</strong> uses your daily entries to help chart and show trends through a myriad of date functionalities. If you ever forget to enter or want to update your daily entries; Don't worry! You can always select a date then enter or update a day's information!
           </p>
-          <br/>
-          <br/>
-          <p>
-            Take full advantage of our helpful tools which include:<br></br>
+
+          <p className="features">
+            <strong>Take full advantage of our helpful tools which include:</strong>
             <ul>
               <li>A daily diary where you can record any thoughts or feelings you have.</li>
               <li>Multiple easy to use trackers to log your overall health.</li>
@@ -40,19 +36,22 @@ function About() {
               <li>The ability to keep track of medications as well as a reminder to take them.</li>
             </ul>
           </p>
-          <br/>
-      
-          <br/>
-          <Link to='/'>Begin your journey with us today!</Link>
-          <br/>
-          <p>
-            The Dadirri Team:<br/>
+          <hr/>
+          <div className="to-home">
+            <Link className ="to-home" to='/'><strong>Begin your journey with us today!</strong></Link>
+          </div>
+
+          <hr/>
+          <p className="members-title">
+            <h3><strong>The Dadirri Team:</strong></h3>
+          </p>
+          <p className="members">
             <ul>
-              <li><a href="https://github.com/ralracish">Carlar Blackman</a></li>
-              <li><a href="https://github.com/kendallsdavis">Kendall Davis</a></li>
-              <li><a href="https://github.com/jlevine84">Jeff Levine</a></li>
-              <li><a href="https://github.com/LesleyPond">Lesley Pond</a></li>
-              <li><a href="https://github.com/JamilW">Jamil Weeks</a></li>
+              <li><a href="https://github.com/ralracish"><strong>Carlar Blackman</strong></a></li>
+              <li><a href="https://github.com/kendallsdavis"><strong>Kendall Davis</strong></a></li>
+              <li><a href="https://github.com/jlevine84"><strong>Jeff Levine</strong></a></li>
+              <li><a href="https://github.com/LesleyPond"><strong>Lesley Pond</strong></a></li>
+              <li><a href="https://github.com/JamilW"><strong>Jamil Weeks</strong></a></li>
             </ul>
           </p>
         </div>

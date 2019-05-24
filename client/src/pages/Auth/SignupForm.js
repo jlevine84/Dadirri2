@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
-import { Redirect, Link } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import { Container, Row, Col } from '../../components/Grid';
 import { Input, FormBtn } from '../../components/Form';
-import AUTH from '../../utils/AUTH';
-import { throws } from 'assert';
 
 class SignupForm extends Component {
 

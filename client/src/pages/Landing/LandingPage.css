@@ -1,4 +1,4 @@
-.body{
+.body {
     background-image: radial-gradient( rgb(106, 169, 241),rgb(154, 214, 236),rgb(154, 214, 236));
     min-height: 100vh;
     width:100vw;
@@ -8,16 +8,14 @@
 
 @-webkit-keyframes glow {
     to {
-         border-color: #ffffff;
-    -webkit-box-shadow: 0 0 50px #fffefe;
-       -moz-box-shadow: 0 0 50px #ffffff;
-       box-shadow: 0px 0px 200px 200px #fdfdfd,0px 0px 200px 200px #fdfdfd inset;
-      
-            
+        border-color: #ffffff;
+        -webkit-box-shadow: 0 0 50px #fffefe;
+        -moz-box-shadow: 0 0 50px #ffffff;
+        box-shadow: 0px 0px 200px 200px #fdfdfd,0px 0px 200px 200px #fdfdfd inset;     
     }
 }
 
-.align-right{
+.align-right {
     text-align:right
 }
 
@@ -26,19 +24,19 @@
     border: 1px solid transparent;
     border-radius:50%;
     -webkit-animation: glow 2.0s infinite alternate;  
-     -webkit-transition: border 2.0s linear, box-shadow 5.0s linear;
-       -moz-transition: border 2.0s linear, box-shadow 5.0s linear;
-            transition: border 2.0s linear, box-shadow 5.0s linear;
+    -webkit-transition: border 2.0s linear, box-shadow 5.0s linear;
+    -moz-transition: border 2.0s linear, box-shadow 5.0s linear;
+    transition: border 2.0s linear, box-shadow 5.0s linear;
 }
 
-.titlex{
+.titlex {
 font-family: 'Poiret One', cursive;
 font-size: 100px;
 color: #767D7D;
 text-align:center;
 }
 
-.signUp{
+.signUp {
 font-family: 'Poiret One', cursive;
 color: #767D7D;
 text-align:center;
@@ -47,27 +45,27 @@ border: solid 1px rgb(185, 185, 185);
 box-shadow: 2px 2px 2px black;
 }
 
-.buttonDiv{
+.buttonDiv {
     text-align:center;
 }
 
-.welcomwModal{
+.welcomwModal {
     height:200px;
     width:200px;
 }
 
-h4{ 
+h4 { 
     margin-right: 50px;
-    color: #767D7D;
+    color: rgb(83, 83, 83);
     text-align:right;
     padding: 20px;
 }
 
-.link{
+.link {
     color: #767D7D
 }
 
-.link:hover{
+.link:hover {
 color: rgb(112, 106, 104)
 }
 
