@@ -1,0 +1,47 @@
+.body{
+  background-image: radial-gradient( #FAE3D9,rgb(127, 236, 222),#61C0BF);
+  height: 100%;
+  width:100%;
+}
+
+.row.no-gutters2{
+  height: 600px;
+}
+
+.about-title {
+  height: 40vh;
+  width: 100vw;
+  background-color: rgb(80, 158, 158);
+  text-align: center;
+  padding-top: 75px;
+}
+
+.about-info {
+  padding:50px;
+  height:600px;
+  border-radius: 5px;
+  background-color: rgb(211, 228, 228);
+  overflow:hidden;
+}
+h4{
+  text-align:right
+}
+h1{
+  text-align:center
+}
+.icon{
+  height:100px;
+}
+a{
+  color: rgb(8, 59, 80)
+}
+a:hover{
+   color: #b6629d
+}
+.centered{
+  text-align:center;
+}
+
+.p{
+  height: 50px;
+}

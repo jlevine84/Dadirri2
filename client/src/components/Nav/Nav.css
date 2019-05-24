@@ -1,0 +1,21 @@
+.logout {
+  color: #fff;
+}
+
+.littleicon{
+  max-height: 50px;
+  max-width: 50px;
+}
+
+.navbar{
+  background-color: #78E2D7;
+  color: #6e6e6e;
+  -webkit-text-stroke: .25px rgb(160, 160, 160);
+  font-size: 20px;
+  max-height: 8vh
+}
+
+.navbarlink{
+  color: #6e6e6e;
+  -webkit-text-stroke: .25px rgb(160, 160, 160);
+}

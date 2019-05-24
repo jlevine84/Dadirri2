@@ -1,0 +1,93 @@
+.float{
+    float:left!important;
+    margin:20px!important;
+}
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 10.15px 0;
+  }
+  input[type=range]:focus {
+    outline: none;
+  }
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 1.7px;
+    cursor: pointer;
+    box-shadow: 1.5px 1.5px 1px #489d9f, 0px 0px 1.5px #51aeb0;
+    background: #5da1cb;
+    border-radius: 0px;
+    border: 0px solid #000101;
+  }
+  input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0px 0px 0px #1d1bd5, 0px 0px 0px #2826e3;
+    border: 0px solid rgba(0, 0, 0, 0);
+    height: 22px;
+    width: 22px;
+    border-radius: 20px;
+    background: #5dc7b5;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -10.15px;
+  }
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ffffff;
+  }
+  input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 1.7px;
+    cursor: pointer;
+    box-shadow: 1.5px 1.5px 1px #489d9f, 0px 0px 1.5px #51aeb0;
+    background: #5da1cb;
+    border-radius: 0px;
+    border: 0px solid #000101;
+  }
+  input[type=range]::-moz-range-thumb {
+    box-shadow: 0px 0px 0px #1d1bd5, 0px 0px 0px #2826e3;
+    border: 0px solid rgba(0, 0, 0, 0);
+    height: 22px;
+    width: 22px;
+    border-radius: 20px;
+    background: #5dc7b5;
+    cursor: pointer;
+  }
+  input[type=range]::-ms-track {
+    width: 100%;
+    height: 1.7px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  input[type=range]::-ms-fill-lower {
+    background: #0a171f;
+    border: 0px solid #000101;
+    border-radius: 0px;
+    box-shadow: 1.5px 1.5px 1px #489d9f, 0px 0px 1.5px #51aeb0;
+  }
+  input[type=range]::-ms-fill-upper {
+    background: #5da1cb;
+    border: 0px solid #000101;
+    border-radius: 0px;
+    box-shadow: 1.5px 1.5px 1px #489d9f, 0px 0px 1.5px #51aeb0;
+  }
+  input[type=range]::-ms-thumb {
+    box-shadow: 0px 0px 0px #1d1bd5, 0px 0px 0px #2826e3;
+    border: 0px solid rgba(0, 0, 0, 0);
+    height: 22px;
+    width: 22px;
+    border-radius: 20px;
+    background: #5dc7b5;
+    cursor: pointer;
+    height: 1.7px;
+  }
+  input[type=range]:focus::-ms-fill-lower {
+    background: #5da1cb;
+  }
+  input[type=range]:focus::-ms-fill-upper {
+    background: #ffffff;
+  }
+  
+  .sliders {
+    -webkit-appearance: slider-vertical;
+  }

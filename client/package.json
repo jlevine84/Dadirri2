@@ -1,0 +1,36 @@
+{
+  "name": "dadirri",
+  "version": "1.0.0",
+  "private": true,
+  "proxy": "http://localhost:3001/",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "chart.js": "^2.8.0",
+    "cheerio": "^1.0.0-rc.3",
+    "moment": "^2.24.0",
+    "react": "^16.0.0",
+    "react-chartjs-2": "^2.7.6",
+    "react-dom": "^16.0.0",
+    "react-responsive-modal": "^3.6.0",
+    "react-router-dom": "^4.1.2",
+    "react-scripts": "1.0.14",
+    "tail.datetime": "^0.4.10"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

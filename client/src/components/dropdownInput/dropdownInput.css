@@ -1,0 +1,14 @@
+.dropdown {
+    width:250px;
+    float:left;
+    margin-left:0px;
+    font-size:20px;
+}
+.title{
+    font-size:15px;
+    font-family: inherit;
+    color:black;
+    width:200px;
+    text-align:left;
+    padding:7px;
+}

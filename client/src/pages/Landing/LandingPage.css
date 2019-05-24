@@ -1,0 +1,63 @@
+.body{
+    background-image: radial-gradient( #FAE3D9,rgb(127, 236, 222),#61C0BF);
+    min-height: 150vh;
+    width:100vw;
+    background-size: cover;
+    height: auto;
+}
+
+
+@-webkit-keyframes glow {
+    to {
+         border-color: #ffffff;
+    -webkit-box-shadow: 0 0 50px #fffefe;
+       -moz-box-shadow: 0 0 50px #ffffff;
+       box-shadow: 0px 0px 200px 200px #fdfdfd,0px 0px 200px 200px #fdfdfd inset;
+      
+            
+    }
+}
+.align-right{
+    text-align:right
+}
+.img-glow {
+    height:200px;
+    border: 1px solid transparent;
+    border-radius:50%;
+    -webkit-animation: glow 2.0s infinite alternate;  
+     -webkit-transition: border 2.0s linear, box-shadow 5.0s linear;
+       -moz-transition: border 2.0s linear, box-shadow 5.0s linear;
+            transition: border 2.0s linear, box-shadow 5.0s linear;
+}
+ .titlex{
+    font-family: 'Poiret One', cursive;
+    font-size: 100px;
+    color: #767D7D;
+    text-align:center;
+ }
+ .signUp{
+    font-family: 'Poiret One', cursive;
+    color: #767D7D;
+    text-align:center;
+    margin:40px;
+ }
+ .buttonDiv{
+     text-align:center;
+ }
+ .welcomwModal{
+     height:200px;
+     width:200px;
+ }
+ h4{ 
+     margin-right: 50px;
+     color: #767D7D;
+     text-align:right;
+     padding: 20px;
+ }
+ .link{
+     color: #767D7D
+ }
+ .link:hover{
+     color: rgb(112, 106, 104)
+ }
+ 

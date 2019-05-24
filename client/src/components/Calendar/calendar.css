@@ -1,0 +1,123 @@
+.calendar-container {
+  margin-left: 5%;
+  margin-right: 20%;
+  margin-top:5%;
+  max-width: 60%;
+  border: solid 1px rgb(196, 196, 196);
+  box-shadow: 3px 2px 2px black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  max-height: 45%;
+}
+
+.calendar-nav {
+  height: 100%;
+  width: 100%;
+}
+
+.calendarbtn {
+  position: relative;
+  width: 25%;
+  background: #78E2D7;
+  color: #4d4d4d;
+  font-weight: bold;
+  -webkit-text-stroke: .25px rgb(160, 160, 160);
+  border: solid 1px rgb(196, 196, 196);
+  box-shadow: 3px 2px 2px black;
+}
+
+.calendarbtn:hover {background: #78E2D7}
+.calendarbtn:active {
+  box-shadow: 0 5px black;
+  transform: translateY(4px);
+  background: #78E2D7;
+}
+
+.btn-prev {
+  position: relative;
+  width: 20%;
+  display: inline-block;
+}
+
+.month-label {
+  position: relative;
+  text-align: center;
+  margin-left: 5%;
+  width: 25%;
+  display: inline-block;
+}
+
+.month-label:hover {
+  cursor: pointer;
+  border: black;
+  background-color: rgb(223, 223, 223);
+}
+
+.year-label {
+  position: relative;
+  text-align: center;
+  margin-left: 5%;
+  width: 25%;
+  display: inline-block;
+}
+
+.btn-next {
+  width: 20%;
+  display: inline-block;
+}
+
+table {
+  text-align: center;
+}
+
+.select-month-table {
+  height: 100%;
+  width: 100%;
+}
+
+.select-month-table td {
+  width: 33.33%;
+}
+
+.select-month-table td:hover {
+  border: black;
+  background-color: rgb(223, 223, 223);
+  cursor: pointer;
+}
+
+.select-day-table {
+  height: 100%;
+  width: 100%;
+}
+
+.select-day-table td {
+  height: 20%;
+  width: 14.25%
+}
+
+.select-day-table td:hover {
+  border: black;
+  background-color: rgb(223, 223, 223);
+  cursor: pointer;
+}
+
+/* Non-selected calendar days */
+.day:hover {
+  cursor: pointer;
+} */
+
+/* Today's date */
+.today {
+  background: teal;
+  color: white;
+  border: 1px solid rgb(10, 243, 243);
+}
+
+/* selected date */
+.selected-day {
+  background: #C6E7EC;
+  color: black;
+  border: 1px solid black;
+}
