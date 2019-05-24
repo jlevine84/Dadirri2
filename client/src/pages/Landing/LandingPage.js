@@ -19,11 +19,11 @@ class LandingPage extends React.Component{
       <div className="body">
         <h4><Link to="/about" className="link">About Dadirri</Link></h4>
         <div class="container">
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
-          <br></br>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
           <img src={iconPath} alt="Nautilus" className="img-glow mx-auto d-block"/>
           <h1 className="titlex">Dadirri</h1>
           <div className="buttonDiv">
