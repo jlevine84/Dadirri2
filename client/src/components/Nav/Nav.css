@@ -14,11 +14,20 @@
   font-size: 26px;
   max-height: 8vh;
   font-weight: bold;
+  padding-top: 15px;
 }
 
 .navbarlink {
   color: rgb(90, 90, 90);
   -webkit-text-stroke: .25px rgb(160, 160, 160);
+  float: right;
+  position: relative;
+  left: 250px;
+}
+
+.welcome {
+  position: relative;
+  left: 150px;
 }
 
 .navbarlink:hover {
