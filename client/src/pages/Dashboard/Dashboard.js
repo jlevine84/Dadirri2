@@ -97,8 +97,8 @@ class Dashboard extends React.Component {
   render() {
     return (
       <div className="dash-body">
-          <div className="no-gutters row-top">
-            <div className="col-7 charts">
+          <div className="row no-gutters row-top">
+            <div className="charts">
               {/* <LineChart 
                 dbreturn={this.state.dbreturn}
                 />
@@ -106,7 +106,7 @@ class Dashboard extends React.Component {
                 dbreturn={this.state.dbreturn}
               /> */}
             </div>
-            <div className="col-5 calendar">
+            <div className="calendar">
               {/* <Calendar grabCalendarDate={this.grabCalendarDate}/>
               <DateRangeSearch 
                 viewDateRange={this.viewDateRange}
@@ -115,9 +115,9 @@ class Dashboard extends React.Component {
             </div>
           </div>
 
-          <div className="no-gutters row-bottom">
-            {/* <div className="col-7 user-data">
-              {(this.state.selectedDate > this.state.currentDate) ? <h5>You can not enter an Entry for a future date</h5> :
+          <div className="row no-gutters row-bottom">
+            <div className="user-data">
+              {/* {(this.state.selectedDate > this.state.currentDate) ? <h5>You can not enter an Entry for a future date</h5> :
               <ViewUserData  
                 selectedDate={this.state.selectedDate}
                 mood={this.state.Mood}
@@ -134,11 +134,11 @@ class Dashboard extends React.Component {
                 prevEntryCallBack={this.prevEntryCallBack}
                 selectedDate={this.state.selectedDate}
                 userID={this.props.userID}
-              />}
+              />} */}
             </div>
-            <div className="col-5 scrape">
-              <PersonalTabs userID={this.props.userID}/>
-            </div>   */}
+            <div className="scrape">
+              {/* <PersonalTabs userID={this.props.userID}/> */}
+            </div>
           </div>
       </div>
     )
