@@ -195,7 +195,7 @@ export default class Calendar extends React.Component {
     });
 
     return (
-      <div className="calendar-container">
+      <div className="calendar-main">
         <div className="calendar-nav">
           <button
             onClick={e => {

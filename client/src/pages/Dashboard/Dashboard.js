@@ -98,6 +98,7 @@ class Dashboard extends React.Component {
     return (
       <div className="dash-body">
           <div className="row no-gutters row-top">
+
             <div className="charts">
               <span className="line-container">
                 <LineChart 
@@ -109,15 +110,20 @@ class Dashboard extends React.Component {
                   dbreturn={this.state.dbreturn}
                 />
               </span>
-
             </div>
+
             <div className="calendar">
-              {/* <Calendar grabCalendarDate={this.grabCalendarDate}/> */}
+              <div className="calendar-container">
+                {/* <Calendar grabCalendarDate={this.grabCalendarDate}/> */}
+              </div>
+              <div className="search-container">
               {/* <DateRangeSearch 
                 viewDateRange={this.viewDateRange}
                 currentDate={this.state.currentDate}
               /> */}
+              </div>
             </div>
+
           </div>
 
           <div className="row no-gutters row-bottom">
