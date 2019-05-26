@@ -4,22 +4,22 @@
 }
 
 .row-top {
-  height: 42vh;
+  height: 45vh;
   width: 100vw;
   background-color: rgb(154, 214, 236);
   float: left;
 }
 
 .row-bottom {
-  height: 50vh;
+  height: 47vh;
   width: 100vw;
   background-color: rgb(154, 214, 236)
 }
 
 .charts {
-  height: 90%;
+  height: 92%;
   width: 58%;
-  margin-top: 1%;
+  margin-top: .5%;
   margin-left: 1%;
   background-color: rgb(224, 240, 250);
   border-radius: 5px;
@@ -28,11 +28,11 @@
 }
 
 .calendar {
-  height: 90%;
-  width: 38%;
+  height: 92%;
+  width: 39%;
   float: left;
-  margin-top: 1%;
-  margin-left: 1.5%;
+  margin-top: .5%;
+  margin-left: 1%;
   background-color: rgb(224, 240, 250);
   border-radius: 5px;
   border: solid 1.5px rgb(185, 185, 185);
@@ -40,10 +40,9 @@
 }
 
 .user-data {
-  height: 92.5%;
+  height: 96%;
   width: 58%;
   margin-left: 1%;
-  margin-top: .5%;
   background-color: rgb(224, 240, 250);
   border-radius: 5px;
   border: solid 1.5px rgb(185, 185, 185);
@@ -51,11 +50,10 @@
 }
 
 .scrape {
-  height: 92.5%;
-  width: 38%;
+  height: 96%;
+  width: 39%;
   float: left;
-  margin-top: .5%;
-  margin-left: 1.5%;
+  margin-left: 1%;
   background-color: rgb(224, 240, 250);
   border-radius: 5px;
   border: solid 1.5px rgb(185, 185, 185);

@@ -114,7 +114,7 @@ class Dashboard extends React.Component {
 
             <div className="calendar">
               <div className="calendar-container">
-                {/* <Calendar grabCalendarDate={this.grabCalendarDate}/> */}
+                <Calendar grabCalendarDate={this.grabCalendarDate}/>
               </div>
               <div className="search-container">
               {/* <DateRangeSearch 
