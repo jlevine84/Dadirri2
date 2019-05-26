@@ -76,7 +76,7 @@ function LineChart (props) {
         }
 
         return(
-            <Line
+            <Line className="line"
                 data={chartData}
                 width={500}
                 height={200}
@@ -90,7 +90,7 @@ function LineChart (props) {
 
 
     return (
-        <div className="lineChart">
+        <div className="line-chart">
             {getData(props.dbreturn)}
         </div>
     );

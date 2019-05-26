@@ -6,7 +6,8 @@
 .row-top {
   height: 42vh;
   width: 100vw;
-  background-color: rgb(154, 214, 236)
+  background-color: rgb(154, 214, 236);
+  float: left;
 }
 
 .row-bottom {
@@ -20,7 +21,7 @@
   width: 58%;
   margin-top: 1%;
   margin-left: 1%;
-  background-color: rgb(235, 240, 243);
+  background-color: rgb(224, 240, 250);
   border-radius: 5px;
   border: solid 1.5px rgb(185, 185, 185);
   box-shadow: 2.5px 2.5px 2.5px black;
@@ -59,4 +60,27 @@
   border-radius: 5px;
   border: solid 1.5px rgb(185, 185, 185);
   box-shadow: 2.5px 2.5px 2.5px black;
+}
+
+.line-container {
+  height: 92.25%;
+  width: 75%;
+  display: inline-block;
+  margin-top: 12.25px;
+  margin-left: 10px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  border: solid 1.5px rgb(224, 224, 224);
+  box-shadow: 1px 1px 1px rgb(121, 121, 121);
+}
+
+.pie-container {
+  width: 22%;
+  height: 93%;
+  display: inline-block;
+  margin-left: 11px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  border: solid 1.5px rgb(224, 224, 224);
+  box-shadow: 1px 1px 1px rgb(121, 121, 121);
 }

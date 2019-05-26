@@ -1,10 +1,26 @@
-.col-sm-4 {
-    height: 235px;
-    padding-left: 55px;
-    padding-top: 10px;
-    margin-bottom: 25px;
+.pie-chart {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
 }
 
-.pieChart{
-    height: 50px;  
+.pies {
+    height: 120%;
+    width: 90%;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    border: 1px solid rgb(179, 179, 179); 
+    border-radius: 5px;
+}
+  
+
+::-webkit-scrollbar-thumb {
+    background: rgb(154, 214, 236); 
+    border: 1px solid rgb(106, 169, 241);
+    border-radius: 5px;
 }

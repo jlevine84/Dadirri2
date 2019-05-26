@@ -87,29 +87,16 @@ function PieChart(props) {
         }
 
         return (
-            <div class="row">
-                <div class="col-sm-4">
-                    <div style={{ height: '180px', width: '180px' }}>
-                        <Pie data={medicineData} width={10} height={10} />
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div style={{ height: '180px', width: '180px' }}>
-                        <Pie data={exerciseData} width={10} height={10} />
-                    </div>
-                </div>
-
-                <div class="col-sm-4">
-                    <div style={{ height: '180px', width: '180px' }}>
-                        <Pie data={showerData} width={10} height={10} />
-                    </div>
-                </div>
+            <div>
+                <Pie className="pies" data={medicineData} width={10} height={10} />
+                <Pie data={exerciseData} width={10} height={10} />
+                <Pie data={showerData} width={10} height={10} />
             </div>
         )
     }
 
     return (
-        <div className="pieChart">
+        <div className="pie-chart">
             {getData(props.dbreturn)}
         </div>
     );
