@@ -1,15 +1,9 @@
 .calendar-main {
-  margin-left: 5%;
-  margin-right: 20%;
-  margin-top:5%;
-  max-width: 60%;
-  border: solid 1px rgb(196, 196, 196);
-  box-shadow: 3px 2px 2px black;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   border-radius: 5px;
-  max-height: 45%;
+  background-color: aliceblue;
 }
 
 .calendar-nav {
@@ -20,19 +14,21 @@
 .calendarbtn {
   position: relative;
   width: 25%;
-  background: #78E2D7;
-  color: #8b8b8b;
+  background: rgb(154, 214, 236);
+  color: rgb(99, 99, 99);
   font-weight: bold;
-  -webkit-text-stroke: .25px rgb(160, 160, 160);
-  border: solid 1px rgb(196, 196, 196);
-  box-shadow: 3px 2px 2px black;
+  border: solid .5px rgb(151, 151, 151);
+  box-shadow: 1.5px 1.5px 1.5px black;
 }
 
-.calendarbtn:hover {background: #78E2D7}
+.calendarbtn:hover {
+  background: rgb(154, 214, 236)
+}
+
 .calendarbtn:active {
   box-shadow: 0 5px black;
   transform: translateY(4px);
-  background: #78E2D7;
+  background: rgb(154, 214, 236);
 }
 
 .btn-prev {
@@ -51,8 +47,9 @@
 
 .month-label:hover {
   cursor: pointer;
-  border: black;
-  background-color: rgb(223, 223, 223);
+  border: .75px solid rgb(182, 182, 182);
+  background-color: rgb(216, 216, 216);
+  font-weight: bold;
 }
 
 .year-label {
@@ -82,9 +79,10 @@ table {
 }
 
 .select-month-table td:hover {
-  border: black;
-  background-color: rgb(223, 223, 223);
+  border: .75px solid rgb(182, 182, 182);
+  background-color: rgb(216, 216, 216);
   cursor: pointer;
+  font-weight: bold;
 }
 
 .select-day-table {
@@ -98,26 +96,28 @@ table {
 }
 
 .select-day-table td:hover {
-  border: black;
-  background-color: rgb(223, 223, 223);
+  border: .75px solid rgb(182, 182, 182);
+  background-color: rgb(216, 216, 216);
+  font-weight: bold;
   cursor: pointer;
 }
 
-/* Non-selected calendar days */
 .day:hover {
   cursor: pointer;
-} */
+}
 
 /* Today's date */
 .today {
-  background: teal;
-  color: white;
-  border: 1px solid rgb(10, 243, 243);
+  background: rgb(154, 214, 236);
+  color: rgb(0, 0, 0);
+  border: 1.5px solid rgb(182, 182, 182);
+  font-weight: bold;
 }
 
 /* selected date */
 .selected-day {
   background: #C6E7EC;
   color: black;
-  border: 1px solid black;
+  border: 1.5px solid rgb(182, 182, 182);
+  font-weight: bold;
 }
