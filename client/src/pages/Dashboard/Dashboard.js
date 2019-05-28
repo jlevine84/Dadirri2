@@ -117,10 +117,10 @@ class Dashboard extends React.Component {
                 <Calendar grabCalendarDate={this.grabCalendarDate}/>
               </div>
               <div className="search-container">
-              {/* <DateRangeSearch 
+              <DateRangeSearch 
                 viewDateRange={this.viewDateRange}
                 currentDate={this.state.currentDate}
-              /> */}
+              />
               </div>
             </div>
 
@@ -128,27 +128,31 @@ class Dashboard extends React.Component {
 
           <div className="row no-gutters row-bottom">
             <div className="user-data">
-              {/* {(this.state.selectedDate > this.state.currentDate) ? <h5>You can not enter an Entry for a future date</h5> :
-              <ViewUserData  
-                selectedDate={this.state.selectedDate}
-                mood={this.state.Mood}
-                anxiety={this.state.Anxiety}
-                energy={this.state.Energy}
-                medicineTaken={this.state.MedicineTaken.toString()}
-                exercise={this.state.Exercise.toString()}
-                sleepHours={this.state.SleepHours}
-                dailyLog={this.state.DailyLog}
-                exerciseAmount={this.state.ExerciseAmount}
-                showered={this.state.Showered.toString()}
-                date={this.state.Date}
-                logged={this.state.Logged}
-                prevEntryCallBack={this.prevEntryCallBack}
-                selectedDate={this.state.selectedDate}
-                userID={this.props.userID}
-              />} */}
+              <div className="user-data-container">
+                {/* {(this.state.selectedDate > this.state.currentDate) ? <h5>You can not enter an Entry for a future date</h5> :
+                <ViewUserData  
+                  selectedDate={this.state.selectedDate}
+                  mood={this.state.Mood}
+                  anxiety={this.state.Anxiety}
+                  energy={this.state.Energy}
+                  medicineTaken={this.state.MedicineTaken.toString()}
+                  exercise={this.state.Exercise.toString()}
+                  sleepHours={this.state.SleepHours}
+                  dailyLog={this.state.DailyLog}
+                  exerciseAmount={this.state.ExerciseAmount}
+                  showered={this.state.Showered.toString()}
+                  date={this.state.Date}
+                  logged={this.state.Logged}
+                  prevEntryCallBack={this.prevEntryCallBack}
+                  selectedDate={this.state.selectedDate}
+                  userID={this.props.userID}
+                />} */}
+              </div>
             </div>
             <div className="scrape">
-              {/* <PersonalTabs userID={this.props.userID}/> */}
+              <div className="scrape-container">
+                <PersonalTabs userID={this.props.userID}/>
+              </div>
             </div>
           </div>
       </div>

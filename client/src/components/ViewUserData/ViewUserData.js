@@ -104,9 +104,9 @@ class ViewUserData extends React.Component {
     render(){
         const entryDate = moment(this.props.selectedDate, 'YYYYMMDD').format('MMMM Do YYYY')
         return(
-            <div id="container">
+            <div>
                 {(this.state.logged && !this.state.edit) ?
-                    <div className ="jumbotron viewData">
+                    <div className="">
                         <div>
                             <h5>Data for {entryDate}</h5>
                             <p><strong>Mood: </strong>{this.props.mood}</p>
@@ -128,20 +128,20 @@ class ViewUserData extends React.Component {
                             <br></br>
                             {this.props.dailyLog}</p>
                             <br></br>
-                            <button type="button" className="btn btn-success float2" onClick={this.switchToEdit}>Edit this entry</button>
+                            <button type="button" className="btn btn-success" onClick={this.switchToEdit}>Edit this entry</button>
                         </div>
                     </div>
                 : (
-                    <div className="jumbotron">
-                        <div className="row">
-                            <div className="col-sm-12 top">
+                    <div className="">
+                        <div className="">
+                            <div className="">
                                 <h5>New Entry for: {entryDate}</h5>
                             </div>
                         </div>
                         <hr/>
                         <h5>How are you feeling today?</h5>
-                        <div className="row">
-                            <div className="col-sm-12">
+                        <div className="">
+                            <div className="">
                                 <Slider 
                                     className="slider"
                                     name={"Mood"}
@@ -165,8 +165,8 @@ class ViewUserData extends React.Component {
                                 />
                             </div>
                         </div>
-                        <div className="row">
-                            <div className="col-sm-12">
+                        <div className="">
+                            <div className="">
                                 <BooleanInput
                                     name={"MedicineTaken"}
                                     title={"Medicine Taken"}
@@ -190,8 +190,8 @@ class ViewUserData extends React.Component {
                                 />
                             </div>
                         </div> 
-                        <div className="input-row">
-                            <div className="col-sm-12">
+                        <div className="">
+                            <div className="">
                             {this.state.Exercise === "true" ?
                                 <Input
                                     name={"ExerciseAmount"}
@@ -208,14 +208,14 @@ class ViewUserData extends React.Component {
                                 />
                             </div>
                         </div>
-                        <div className="row">
-                            <div className="col-sm-9">
+                        <div className="">
+                            <div className="">
                             {this.state.logged && 
-                                <button onClick={this.switchtoSeeData} className="btn btn-danger float-left">Back</button>}
+                                <button onClick={this.switchtoSeeData} className="btn btn-danger">Back</button>}
                             </div>
                         
-                            <div className="col-sm-3">
-                                <button onClick={this.submitNewEntry} className="btn btn-success float">Submit</button>
+                            <div className="">
+                                <button onClick={this.submitNewEntry} className="btn btn-success">Submit</button>
                             </div>
                         </div>
                     </div>

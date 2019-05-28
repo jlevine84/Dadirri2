@@ -104,3 +104,25 @@
   border: solid .5px rgb(206, 206, 206);
   box-shadow: 1px 1px 1px rgb(121, 121, 121);
 }
+
+.user-data-container {
+  height: 94%;
+  width: 97.75%;
+  margin-top: 11px;
+  margin-left: 1.25%;
+  background-color: aliceblue;
+  border-radius: 5px;
+  border: solid .5px rgb(206, 206, 206);
+  box-shadow: 1px 1px 1px rgb(121, 121, 121);
+}
+
+.scrape-container {
+  height: 94%;
+  width: 97.5%;
+  margin-top: 11px;
+  margin-left: 1.25%;
+  background-color: aliceblue;
+  border-radius: 5px;
+  border: solid .5px rgb(206, 206, 206);
+  box-shadow: 1px 1px 1px rgb(121, 121, 121);
+}

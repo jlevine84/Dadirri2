@@ -1,10 +1,33 @@
-h5{
-    text-align:center;
+.scraper {
+    height: 100%;
+    width: 100%;
 }
-.jumbotron{
-padding-top: 10px;
+
+.scraper h5 {
+    text-align: center;
+    position: relative;
+    top: 7px;
 }
-.center{
-    text-align:left;
-    padding-bottom: 15px;
+
+.scraper hr {
+    width: 95%;
+}
+
+.articles {
+    margin-left: 75px;
+    margin-right: 75px;
+    height: 80%;
+}
+
+.article {
+    height: 25%;
+}
+
+.article a {
+    color: rgb(90, 90, 90);
+    text-decoration: underline;
+}
+
+.article a:hover {
+    color: rgb(90, 90, 90)
 }
