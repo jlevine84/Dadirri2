@@ -1,6 +1,7 @@
 .dash-body {
   height: 92vh;
   width: 100vw;
+  overflow: hidden;
 }
 
 .row-top {

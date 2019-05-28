@@ -106,16 +106,28 @@ class ViewUserData extends React.Component {
         return(
             <div className="entries-container">
                 {(this.state.logged && !this.state.edit) ?
-                    <div className="">
-                        <div>
-                            <h5>Data for {entryDate}</h5>
-                            <p><strong>Mood: </strong>{this.props.mood}</p>
-                            <p><strong>Anxiety: </strong>{this.props.anxiety}</p>
-                            <p><strong>Energy: </strong>{this.props.energy}</p>
-                            <p><strong>Hours Slept: </strong>{this.props.sleepHours}</p>
-                            <p><strong>Medicine Taken: </strong>{this.props.medicineTaken}</p>
-                            <p><strong>Showered: </strong>{this.props.showered}</p>
-                            {this.props.exercise === "true" ?  
+                    <div className="view-entry">
+                        <div className="validation">
+                            <h5>Entry for: {entryDate}</h5>
+                            <hr/>
+                        </div>
+                        <div className="view-entry-container">
+                            <div className="sliders">
+                                <p><strong>Mood: {this.props.mood}</strong></p>
+                                <p><strong>Anxiety: {this.props.anxiety}</strong></p>
+                                <p><strong>Energy: {this.props.energy}</strong></p>
+                            </div>
+                            <div className="booleans">
+                                <p><strong>Hours Slept: {this.props.sleepHours}</strong></p>
+                                <p><strong>Medicine Taken: {this.props.medicineTaken}</strong></p>
+                                <p><strong>Showered: {this.props.showered}</strong></p>
+                            </div>
+                            <div className="text-areas">
+                                <p><strong>Daily Log: </strong>
+                                <br></br>
+                                {this.props.dailyLog}</p>
+                                <br></br>
+                                {this.props.exercise === "true" ?  
                                 <div>
                                     <p><strong>Exercised: </strong>{this.props.exercise}</p>
                                     <p><strong>Exercise Details: </strong>
@@ -123,12 +135,11 @@ class ViewUserData extends React.Component {
                                     {this.props.exerciseAmount}</p>
                                     <br></br>
                                 </div>
-                            :   ""  }
-                            <p><strong>Daily Log: </strong>
-                            <br></br>
-                            {this.props.dailyLog}</p>
-                            <br></br>
-                            <button type="button" className="btn btn-success" onClick={this.switchToEdit}>Edit this entry</button>
+                                :   ""  }
+                            </div>
+                            <div className="buttons">
+                                <button type="button" className="btn btn-success" onClick={this.switchToEdit}>Edit</button>
+                            </div>
                         </div>
                     </div>
                 : (
