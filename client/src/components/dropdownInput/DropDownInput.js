@@ -4,10 +4,9 @@ import './dropdownInput.css'
 function DropDownInput(props) {
 
     return (
-      <div class="form-group dropdown">
-      <br></br>
-      <label for="DropDownInput" className="title">{props.title}</label>
-      <select class="form-control" id="DropDownInput" onChange={props.update} name={props.name} defaultValue={props.defaultValue}>
+      <div class="form-group sleep-dropdown">
+      <label  className="sleep-title">{props.title}</label>
+      <select class="form-control sleep-option" onChange={props.update} name={props.name} defaultValue={props.defaultValue}>
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -28,7 +27,6 @@ function DropDownInput(props) {
         <option value="18">18</option>
         <option value="19">19</option>
         <option value="20">20</option>
-
       </select>
     </div>
   )

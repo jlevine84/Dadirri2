@@ -129,7 +129,12 @@ class Dashboard extends React.Component {
           <div className="row no-gutters row-bottom">
             <div className="user-data">
               <div className="user-data-container">
-                {/* {(this.state.selectedDate > this.state.currentDate) ? <h5>You can not enter an Entry for a future date</h5> :
+                {(this.state.selectedDate > this.state.currentDate) ? 
+                  <div className="validation">
+                    <h5>You can not enter an Entry for a future date</h5>
+                    <hr/>
+                  </div> 
+                :
                 <ViewUserData  
                   selectedDate={this.state.selectedDate}
                   mood={this.state.Mood}
@@ -146,7 +151,7 @@ class Dashboard extends React.Component {
                   prevEntryCallBack={this.prevEntryCallBack}
                   selectedDate={this.state.selectedDate}
                   userID={this.props.userID}
-                />} */}
+                />}
               </div>
             </div>
             <div className="scrape">

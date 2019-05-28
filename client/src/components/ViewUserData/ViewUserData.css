@@ -1,0 +1,27 @@
+.entries-container {
+  height: 100%;
+  width: 100%;
+}
+
+.new-entry {
+  height: 100%;
+  width: 100%;
+}
+
+.new-entry-container {
+  height: 81%;
+  width: 90%;
+}
+
+.sliders {
+  height: 38%;
+  width: 12%;
+  margin-left: 15px;
+  float: left;
+}
+
+.booleans {
+  height: 24.5%;
+  width: 17.5%;
+  float: left;
+}

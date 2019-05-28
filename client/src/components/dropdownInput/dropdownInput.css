@@ -1,14 +1,13 @@
-.dropdown {
-    width:250px;
-    float:left;
-    margin-left:0px;
-    font-size:20px;
+.sleep-dropdown {
+    width: 65%;
+    margin-left: 28px;
+    margin-top: 5px;
 }
-.title{
-    font-size:15px;
-    font-family: inherit;
-    color:black;
-    width:200px;
-    text-align:left;
-    padding:7px;
+
+.sleep-title {
+    font-weight: bold;
+}
+
+.sleep-option:active {
+    border: 1px solid black;
 }

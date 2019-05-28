@@ -104,7 +104,7 @@ class ViewUserData extends React.Component {
     render(){
         const entryDate = moment(this.props.selectedDate, 'YYYYMMDD').format('MMMM Do YYYY')
         return(
-            <div>
+            <div className="entries-container">
                 {(this.state.logged && !this.state.edit) ?
                     <div className="">
                         <div>
@@ -132,65 +132,61 @@ class ViewUserData extends React.Component {
                         </div>
                     </div>
                 : (
-                    <div className="">
-                        <div className="">
-                            <div className="">
+                    <div className="new-entry">
+                            <div className="validation">
                                 <h5>New Entry for: {entryDate}</h5>
+                                <hr/>
                             </div>
-                        </div>
-                        <hr/>
-                        <h5>How are you feeling today?</h5>
-                        <div className="">
-                            <div className="">
-                                <Slider 
-                                    className="slider"
-                                    name={"Mood"}
-                                    display={this.state.Mood}
-                                    update={this.updateValue}
-                                    defaultValue={this.state.Mood}
-                                />
-                                <Slider 
-                                    className="slider"
-                                    name={"Anxiety"}
-                                    display={this.state.Anxiety}
-                                    update={this.updateValue}
-                                    defaultValue={this.state.Anxiety}
-                                />
-                                <Slider
-                                    className="slider" 
-                                    name={"Energy"}
-                                    display={this.state.Energy}
-                                    update={this.updateValue}
-                                    defaultValue={this.state.Energy}
-                                />
+                            <div className="new-entry-container">
+                                {/* Sliders */}
+                                <div className="sliders">
+                                    <Slider 
+                                        name={"Mood"}
+                                        display={this.state.Mood}
+                                        update={this.updateValue}
+                                        defaultValue={this.state.Mood}
+                                    />
+                                    <Slider 
+                                        name={"Anxiety"}
+                                        display={this.state.Anxiety}
+                                        update={this.updateValue}
+                                        defaultValue={this.state.Anxiety}
+                                    />
+                                    <Slider
+                                        name={"Energy"}
+                                        display={this.state.Energy}
+                                        update={this.updateValue}
+                                        defaultValue={this.state.Energy}
+                                    />
+                                </div>
+                                {/* Booleans */}
+                                <div className="booleans">
+                                    <BooleanInput
+                                        name={"MedicineTaken"}
+                                        title={"Medicine Taken"}
+                                        update={this.updateValue}
+                                    />
+                                    <BooleanInput
+                                        name={"Exercise"}
+                                        title={"Exercise"}
+                                        update={this.updateValue}
+                                    />
+                                    <BooleanInput
+                                        name={"Showered"}
+                                        title={"Showered"}
+                                        update={this.updateValue}
+                                    />
+                                    <DropDownInput
+                                        title={"Hours Slept: "}
+                                        name="SleepHours"
+                                        update={this.updateValue}
+                                        defaultValue={this.state.SleepHours}
+                                    />
+                                </div>
+
                             </div>
-                        </div>
-                        <div className="">
-                            <div className="">
-                                <BooleanInput
-                                    name={"MedicineTaken"}
-                                    title={"Medicine Taken"}
-                                    update={this.updateValue}
-                                />
-                                <BooleanInput
-                                    name={"Exercise"}
-                                    title={"Exercise"}
-                                    update={this.updateValue}
-                                />
-                                <BooleanInput
-                                    name={"Showered"}
-                                    title={"Showered"}
-                                    update={this.updateValue}
-                                />
-                                <DropDownInput
-                                    title={"Hours Slept: "}
-                                    name="SleepHours"
-                                    update={this.updateValue}
-                                    defaultValue={this.state.SleepHours}
-                                />
-                            </div>
-                        </div> 
-                        <div className="">
+
+                        {/* <div className="">
                             <div className="">
                             {this.state.Exercise === "true" ?
                                 <Input
@@ -207,8 +203,8 @@ class ViewUserData extends React.Component {
                                     update={this.updateValue}
                                 />
                             </div>
-                        </div>
-                        <div className="">
+                        </div> */}
+                        {/* <div className="">
                             <div className="">
                             {this.state.logged && 
                                 <button onClick={this.switchtoSeeData} className="btn btn-danger">Back</button>}
@@ -217,7 +213,7 @@ class ViewUserData extends React.Component {
                             <div className="">
                                 <button onClick={this.submitNewEntry} className="btn btn-success">Submit</button>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 )}           
             </div>    

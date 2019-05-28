@@ -126,3 +126,16 @@
   border: solid .5px rgb(206, 206, 206);
   box-shadow: 1px 1px 1px rgb(121, 121, 121);
 }
+
+.validation {
+  text-align: center;
+}
+
+.validation h5 {
+  position: relative;
+  top: 8px;
+}
+
+.validation hr {
+  width: 95%;
+}

@@ -3,10 +3,10 @@ import './slider.css'
 
 function Slider(props) {
   return (
-    <div className = "float">
-      <label>* {props.name}</label>
+    <div className="slider">
+      <label>* {props.name}: {props.display}</label>
       <br/>
-      <input className="sliders"
+      <input className=""
         name={props.name}
         type="range"
         min="1"
@@ -14,7 +14,6 @@ function Slider(props) {
         defaultValue={props.defaultValue}
         onChange={props.update}
       />
-      <p>{props.display}</p>
     </div>
   )
 }

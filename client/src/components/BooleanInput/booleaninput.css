@@ -1,9 +1,40 @@
-.float{
-    float:left;
-    width:150px;
-    
+.boolean {
+    text-align: center;
+    height: 100%;
+    width: 100%;
 }
 
-/* .form-check-input{
-    font-size: 2px;
-} */
+.boolean-title {
+    height: 33.33%;
+    font-weight: bold;
+}
+
+.true-false {
+    height: 33.33%;
+    font-weight: 350;
+}
+
+.true-false-radios {
+    height: 33.33%;
+    margin-bottom: 10px;
+}
+
+.true {
+    position: relative;
+    right: 15px;
+}
+
+.false {
+    position: relative;
+    left: 15px;
+}
+
+.true-radio {
+    position: relative;
+    right: 24px;
+}
+
+.false-radio {
+    position: relative;
+    left: 43px;
+}
