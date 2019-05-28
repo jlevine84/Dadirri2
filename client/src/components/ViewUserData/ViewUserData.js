@@ -133,87 +133,88 @@ class ViewUserData extends React.Component {
                     </div>
                 : (
                     <div className="new-entry">
-                            <div className="validation">
-                                <h5>New Entry for: {entryDate}</h5>
-                                <hr/>
-                            </div>
-                            <div className="new-entry-container">
-                                {/* Sliders */}
-                                <div className="sliders">
-                                    <Slider 
-                                        name={"Mood"}
-                                        display={this.state.Mood}
-                                        update={this.updateValue}
-                                        defaultValue={this.state.Mood}
-                                    />
-                                    <Slider 
-                                        name={"Anxiety"}
-                                        display={this.state.Anxiety}
-                                        update={this.updateValue}
-                                        defaultValue={this.state.Anxiety}
-                                    />
-                                    <Slider
-                                        name={"Energy"}
-                                        display={this.state.Energy}
-                                        update={this.updateValue}
-                                        defaultValue={this.state.Energy}
-                                    />
-                                </div>
-                                {/* Booleans */}
-                                <div className="booleans">
-                                    <BooleanInput
-                                        name={"MedicineTaken"}
-                                        title={"Medicine Taken"}
-                                        update={this.updateValue}
-                                    />
-                                    <BooleanInput
-                                        name={"Exercise"}
-                                        title={"Exercise"}
-                                        update={this.updateValue}
-                                    />
-                                    <BooleanInput
-                                        name={"Showered"}
-                                        title={"Showered"}
-                                        update={this.updateValue}
-                                    />
-                                    <DropDownInput
-                                        title={"Hours Slept: "}
-                                        name="SleepHours"
-                                        update={this.updateValue}
-                                        defaultValue={this.state.SleepHours}
-                                    />
-                                </div>
-
-                            </div>
-
-                        {/* <div className="">
-                            <div className="">
-                            {this.state.Exercise === "true" ?
-                                <Input
-                                    name={"ExerciseAmount"}
-                                    title={"Exercise Details"}
-                                    placeholder={"Log your exercise details here"}
+                        <div className="validation">
+                            <h5>New Entry for: {entryDate}</h5>
+                            <hr/>
+                        </div>
+                        <div className="new-entry-container">
+                            {/* Sliders */}
+                            <div className="sliders">
+                                <Slider 
+                                    name={"Mood"}
+                                    display={this.state.Mood}
                                     update={this.updateValue}
-                                /> : ""
-                            }
-                                <Input
-                                    name="DailyLog"
-                                    title={"Daily Log"}
-                                    placeholder={"Log your thoughts about today here"}
+                                    defaultValue={this.state.Mood}
+                                />
+                                <Slider 
+                                    name={"Anxiety"}
+                                    display={this.state.Anxiety}
                                     update={this.updateValue}
+                                    defaultValue={this.state.Anxiety}
+                                />
+                                <Slider
+                                    name={"Energy"}
+                                    display={this.state.Energy}
+                                    update={this.updateValue}
+                                    defaultValue={this.state.Energy}
                                 />
                             </div>
-                        </div> */}
-                        {/* <div className="">
-                            <div className="">
-                            {this.state.logged && 
-                                <button onClick={this.switchtoSeeData} className="btn btn-danger">Back</button>}
+                            {/* Booleans */}
+                            <div className="booleans">
+                                <BooleanInput
+                                    name={"MedicineTaken"}
+                                    title={"Medicine Taken"}
+                                    update={this.updateValue}
+                                />
+                                <BooleanInput
+                                    name={"Exercise"}
+                                    title={"Exercise"}
+                                    update={this.updateValue}
+                                />
+                                <BooleanInput
+                                    name={"Showered"}
+                                    title={"Showered"}
+                                    update={this.updateValue}
+                                />
+                                <DropDownInput
+                                    title={"Hours Slept: "}
+                                    name="SleepHours"
+                                    update={this.updateValue}
+                                    defaultValue={this.state.SleepHours}
+                                />
                             </div>
-                        
-                            <div className="">
-                                <button onClick={this.submitNewEntry} className="btn btn-success">Submit</button>
+                            {/* Inputs */}
+                            <div className="text-areas">
+                                <div className="form-group daily-input">
+                                    <label>Daily Log</label>
+                                    <textarea 
+                                        className="form-control" 
+                                        placeholder="How was your Day?"
+                                        name="DailyLog"
+                                        onChange={this.updateValue}
+                                        rows="6"/>
+                                </div>
+                                {this.state.Exercise === "true" ?
+                                    <div className="form-group exercise-input">
+                                        <label>Exercise Details</label>
+                                        <textarea 
+                                            className="form-control" 
+                                            placeholder="Log your exercise here."
+                                            name="ExerciseAmount"
+                                            onChange={this.updateValue}
+                                            rows="2"/>
+                                    </div>: "" }
                             </div>
-                        </div> */}
+                            <div className="buttons">
+                                <div className="">
+                                    <button onClick={this.submitNewEntry} className="btn btn-success">Submit</button>
+                                </div>
+                                <div className="">
+                                    {this.state.logged && 
+                                    <button onClick={this.switchtoSeeData} className="btn btn-danger">Back</button>}
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 )}           
             </div>    

@@ -1,11 +1,3 @@
-.clear{
-    clear:both;
+.input label {
+    font-weight: bold;
 }
-/* 
-.form-group.clear{
-    height: 700px;
-} */
-
-/* .div{
-    height: 300px;
-} */

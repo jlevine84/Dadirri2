@@ -8,6 +8,6 @@
     font-weight: bold;
 }
 
-.sleep-option:active {
-    border: 1px solid black;
+.sleep-option {
+    font-weight: 500;
 }

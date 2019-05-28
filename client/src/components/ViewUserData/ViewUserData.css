@@ -10,7 +10,8 @@
 
 .new-entry-container {
   height: 81%;
-  width: 90%;
+  width: 100%;
+  margin-left: 20px;
 }
 
 .sliders {
@@ -24,4 +25,56 @@
   height: 24.5%;
   width: 17.5%;
   float: left;
+}
+
+.text-areas {
+  width: 55.5%;
+  height: 100%;
+  float: left;
+  font-weight: bold;
+}
+
+.daily-input {
+  position: relative;
+  bottom: 7.5px;
+}
+
+.daily-input label{
+  position: relative;
+  top: 7px;
+}
+
+.exercise-input {
+  position: relative;
+  bottom: 20px;
+}
+
+.exercise-input label {
+  position: relative;
+  top: 7px;
+}
+
+.buttons {
+  margin-left: 5px;
+  height: 100%;
+  width: 3%;
+  float: left;
+  margin-top: 25px;
+}
+
+.btn-success {
+  height: 25px;
+  width: 75px;
+  padding-bottom: 30px;
+  padding-right: 15px;
+  text-align: center;
+}
+
+.btn-danger {
+  margin-top: 2.5px;
+  height: 25px;
+  width: 75px;
+  padding-bottom: 30px;
+  padding-right: 15px;
+  text-align: center;
 }
