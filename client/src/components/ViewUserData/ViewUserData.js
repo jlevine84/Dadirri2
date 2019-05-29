@@ -3,7 +3,6 @@ import './ViewUserData.css';
 import moment from 'moment'
 import API from './../../utils/API';
 import Slider from '../Slider/Slider'
-import Input from '../Input/Input'
 import BooleanInput from '../BooleanInput/BooleanInput'
 import DropDownInput from './../dropdownInput/DropDownInput';
 
