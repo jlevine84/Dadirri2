@@ -89,3 +89,15 @@
   padding-right: 15px;
   text-align: center;
 }
+
+.log-details {
+  max-height: 52%;
+  overflow: auto;
+}
+
+.exercise-details {
+  max-height: 30%;
+  overflow: auto;
+  position: relative;
+  bottom: 15px;
+}

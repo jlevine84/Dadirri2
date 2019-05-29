@@ -120,20 +120,20 @@ class ViewUserData extends React.Component {
                                 <p><strong>Hours Slept: {this.props.sleepHours}</strong></p>
                                 <p><strong>Medicine Taken: {this.props.medicineTaken}</strong></p>
                                 <p><strong>Showered: {this.props.showered}</strong></p>
+                                <p><strong>Exercised: </strong><strong>{this.props.exercise}</strong></p>
                             </div>
                             <div className="text-areas">
-                                <p><strong>Daily Log: </strong>
-                                <br></br>
-                                {this.props.dailyLog}</p>
-                                <br></br>
-                                {this.props.exercise === "true" ?  
-                                <div>
-                                    <p><strong>Exercised: </strong>{this.props.exercise}</p>
-                                    <p><strong>Exercise Details: </strong>
-                                    <br></br>
-                                    {this.props.exerciseAmount}</p>
-                                    <br></br>
+                                <label><strong>Daily Log: </strong></label>                                
+                                <div className="log-details">
+                                    {this.props.dailyLog}
+                                    <br/>
                                 </div>
+                                <br/>
+                                {this.props.exercise === "true" ? 
+                                    <div className="exercise-details">
+                                        <label><strong>Exercise Details: </strong></label>
+                                        <div>{this.props.exerciseAmount}</div>
+                                    </div> 
                                 :   ""  }
                             </div>
                             <div className="buttons">
