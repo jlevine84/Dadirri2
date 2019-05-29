@@ -16,12 +16,12 @@ input[type=range] {
     border: 0px solid #000101;
   }
   input[type=range]::-webkit-slider-thumb {
-    box-shadow: 0px 0px 0px #1d1bd5, 0px 0px 0px #2826e3;
-    border: 0px solid rgba(0, 0, 0, 0);
+    box-shadow: 1px 1px 1px #1d1bd5, 1px 1px 1px #2826e3;
+    border: .5px solid rgb(83, 83, 83);
     height: 22px;
     width: 22px;
     border-radius: 20px;
-    background: #5dc7b5;
+    background: #5da1cb;
     cursor: pointer;
     -webkit-appearance: none;
     margin-top: -10.15px;
