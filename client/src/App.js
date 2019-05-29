@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Nav from "./components/Nav";
+
 import AUTH from './utils/AUTH';
 import LandingPage from './pages/Landing/LandingPage';
 import Dashboard from './pages/Dashboard/Dashboard';
@@ -105,7 +105,7 @@ class App extends Component {
 				{/* User is logged in */}
         { this.state.loggedIn && (
           <div>
-						<Nav user={this.state.user} logout={this.logout} user={this.state.name}/>
+
               <Switch>
                 <Route exact path="/" component={() => <Dashboard userID={this.state.user._id} user={this.state.name}/>} />
 								<Route exact path="/about" component={() => <About user={this.state.user}/>} />

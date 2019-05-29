@@ -8,6 +8,7 @@ import API from '../../utils/API';
 import moment from 'moment'
 import DateRangeSearch from '../../components/RangeSearch/RangeSearch'
 import PersonalTabs from '../../components/PersonalTabs/PersonalTabs'
+import Nav from "../../components/Nav/Nav";
 
 class Dashboard extends React.Component {
 
@@ -96,7 +97,9 @@ class Dashboard extends React.Component {
 
   render() {
     return (
-      <div className="dash-body">
+      <div>
+        <Nav user={this.state.user} logout={this.logout} user={this.state.name}/>
+        <div className="dash-body">
           <div className="row no-gutters row-top">
 
             <div className="charts">
@@ -160,7 +163,9 @@ class Dashboard extends React.Component {
               </div>
             </div>
           </div>
+        </div>
       </div>
+
     )
   }
 }
