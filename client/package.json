@@ -5,7 +5,7 @@
   "proxy": "http://localhost:3001/",
   "dependencies": {
     "axios": "^0.16.2",
-    "chart.js": "^2.8.0",
+    "chart.js": "^2.9.4",
     "cheerio": "^1.0.0-rc.3",
     "moment": "^2.24.0",
     "react": "^16.0.0",
